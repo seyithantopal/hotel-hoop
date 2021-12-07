@@ -3,12 +3,12 @@ import { View, Text } from 'react-native';
 
 import styles from './styles';
 
-const Home: FC = () => {
+const DetailsScreen: FC = () => {
   return (
     <View style={styles.wrapper}>
-      <Text>Home Screen</Text>
+      <Text>Detail Screen</Text>
     </View>
   );
 };
 
-export default Home;
+export default DetailsScreen;
