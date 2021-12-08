@@ -1,6 +1,6 @@
 export const COLOR_PRIMARY = '#f79a5a';
 export const COLOR_SECONDARY = '#ADADAF';
-export const COLOR_BACKGROUND = '#f9f9f9';
+export const COLOR_BACKGROUND = '#f2f2f2';
 export const COLOR_HOTEL_BACKGROUND = '#fff';
 export const COLOR_SORTING_ICON_STROKE = '#FFF';
 export const COLOR_SEARCH_ICON_STROKE = '#000';

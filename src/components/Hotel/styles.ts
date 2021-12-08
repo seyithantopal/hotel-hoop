@@ -28,11 +28,14 @@ export default StyleSheet.create({
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
   },
-  leftWrapper: {},
+  leftWrapper: {
+    width: 200,
+  },
   rightWrapper: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-end',
+    height: '100%',
   },
   hotelFeaturesWrapper: {
     width: '100%',
@@ -60,9 +63,7 @@ export default StyleSheet.create({
   },
   hotelPriceWrapper: {
     backgroundColor: COLOR_PRIMARY,
-    position: 'absolute',
-    bottom: 70,
-    right: 17,
+    bottom: 35,
     padding: 10,
     borderRadius: 10,
     fontSize: 21,

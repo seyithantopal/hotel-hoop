@@ -14,4 +14,10 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
+  hotelList: {
+    marginTop: 20,
+  },
+  hotel: {
+    marginBottom: 10,
+  },
 });

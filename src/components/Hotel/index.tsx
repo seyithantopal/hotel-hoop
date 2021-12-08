@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
 import { View, Text, Image } from 'react-native';
-
+import { HotelType } from '../../utils/constants/interfaces';
 import Pin from './Icons/Pin';
 import Stars from '../Stars';
+
 import styles from './styles';
 
-const Hotel: FC = () => {
+const Hotel: FC<{ hotel: HotelType }> = ({ hotel }) => {
   return (
     <View style={styles.wrapper}>
       <View style={styles.hotelWrapper}>
@@ -17,19 +18,22 @@ const Hotel: FC = () => {
         />
         <View style={styles.hotelFeaturesWrapper}>
           <View style={styles.leftWrapper}>
-            <Text style={styles.hotelName}>Deluxe Room</Text>
+            <Text style={styles.hotelName}>{hotel.name}</Text>
             <View style={styles.hotelLocationWrapper}>
               <Pin />
-              <Text style={styles.hotelLocation}>London</Text>
+              <Text style={styles.hotelLocation}>{hotel.location.city}</Text>
             </View>
           </View>
           <View style={styles.rightWrapper}>
-            <Stars stars={3} />
-            <Text style={styles.hotelUserRating}>9.8</Text>
+            <View style={styles.hotelPriceWrapper}>
+              <Text
+                style={
+                  styles.hotelPrice
+                }>{`${hotel.price}${hotel.currency} / night`}</Text>
+            </View>
+            <Stars stars={hotel.stars} />
+            <Text style={styles.hotelUserRating}>{hotel.userRating}</Text>
           </View>
-        </View>
-        <View style={styles.hotelPriceWrapper}>
-          <Text style={styles.hotelPrice}>€20 / night</Text>
         </View>
       </View>
     </View>
