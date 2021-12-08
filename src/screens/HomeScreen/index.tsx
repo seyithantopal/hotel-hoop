@@ -7,6 +7,7 @@ import { homeScreenProp } from '../../types/types';
 import Title from '../../components/Title';
 import Searchbox from '../../components/Searchbox';
 import Sortingbox from '../../components/Sortingbox';
+import Hotel from '../../components/Hotel';
 
 import styles from './styles';
 
@@ -20,6 +21,7 @@ const HomeScreen: FC = () => {
         <Searchbox />
         <Sortingbox />
       </View>
+      <Hotel />
     </View>
   );
 };
