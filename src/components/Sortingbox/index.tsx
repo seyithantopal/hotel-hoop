@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Sortingbox: FC<Props> = ({ onMenuItemPress }) => {
-  const [isSortButtonOpen, setIsSortButtonOpen] = useState<boolean>(true);
+  const [isSortButtonOpen, setIsSortButtonOpen] = useState<boolean>(false);
   return (
     <View style={styles.wrapper}>
       {isSortButtonOpen && (

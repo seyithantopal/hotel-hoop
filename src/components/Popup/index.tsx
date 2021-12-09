@@ -16,6 +16,7 @@ const Popup: FC<Props> = ({ onMenuItemPress, setIsSortButtonOpen }) => {
       {MENU.map((e, i) => {
         return (
           <TouchableOpacity
+            key={i}
             onPress={() => {
               onMenuItemPress(e);
               setIsSortButtonOpen(false);
