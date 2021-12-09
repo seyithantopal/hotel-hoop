@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { COLOR_BACKGROUND } from '../../utils/constants/color';
+import { COLOR_BACKGROUND, COLOR_PRIMARY } from '../../utils/constants/color';
 
 export default StyleSheet.create({
   wrapper: {
@@ -19,5 +19,16 @@ export default StyleSheet.create({
   },
   hotel: {
     marginBottom: 10,
+  },
+  noDataWrapper: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 20,
+  },
+  noData: {
+    fontSize: 28,
+    fontWeight: '600',
+    color: COLOR_PRIMARY,
   },
 });

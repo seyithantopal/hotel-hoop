@@ -25,3 +25,8 @@ export interface HotelType {
   price: number;
   currency: string;
 }
+
+export interface SearchboxType {
+  value: string;
+  onChangeText: (search: string) => void;
+}

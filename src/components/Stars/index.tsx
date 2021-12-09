@@ -9,8 +9,8 @@ const Stars: FC<{ stars: number }> = ({ stars }) => {
     let items = [];
     for (let i = 1; i <= 5; i++) {
       i <= stars
-        ? items.push(<Star active={true} />)
-        : items.push(<Star active={false} />);
+        ? items.push(<Star active={true} key={i} />)
+        : items.push(<Star active={false} key={i} />);
     }
     return items;
   };
