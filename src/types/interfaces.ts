@@ -38,3 +38,9 @@ export interface SearchboxType {
   value: string;
   onChangeText: (search: string) => void;
 }
+
+export interface SortObjectType {
+  key: string;
+  text: string;
+  sortBy: string;
+}

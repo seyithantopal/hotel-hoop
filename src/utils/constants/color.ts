@@ -23,3 +23,4 @@ export const COLOR_DOT_BACKGROUND = '#fff';
 export const COLOR_TITLE = '#000';
 export const COLOR_PAGINATOR_BACKGROUND_COLOR_ACTIVE = '#fff';
 export const COLOR_PAGINATOR_BACKGROUND_COLOR_PASSIVE = '#ADADAF';
+export const COLOR_POPUP_BACKGROUND = '#fff';

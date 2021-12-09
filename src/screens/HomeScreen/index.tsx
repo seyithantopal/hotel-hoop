@@ -2,7 +2,7 @@ import React, { FC, useState, useEffect } from 'react';
 import { View, Text, FlatList, TouchableWithoutFeedback } from 'react-native';
 import axios from 'axios';
 import { homeScreenProp } from '../../types/types';
-import { HotelType } from '../../types/interfaces';
+import { HotelType, SortObjectType } from '../../types/interfaces';
 
 // Components
 import Title from '../../components/Title';
@@ -39,12 +39,22 @@ const HomeScreen: FC<homeScreenProp> = ({ navigation }) => {
     );
     setFilteredHotels(filteredData);
   };
+
+  const handleSortButton = (sortBasedOn: SortObjectType) => {
+    setFilteredHotels(prevState => {
+      const temp = [...prevState];
+      temp.sort((a, b) =>
+        sortBasedOn.sortBy === 'asc' ? a.price - b.price : b.price - a.price,
+      );
+      return temp;
+    });
+  };
   return (
     <View style={styles.wrapper}>
       <Title title={'Let\'\s select a hotel'} />
       <View style={styles.searchAndSort}>
         <Searchbox value={search} onChangeText={onChangeText} />
-        <Sortingbox />
+        <Sortingbox onMenuItemPress={handleSortButton} />
       </View>
       <FlatList
         data={filteredHotels}
