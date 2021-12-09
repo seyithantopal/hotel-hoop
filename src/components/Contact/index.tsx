@@ -13,13 +13,13 @@ const Contact: FC = ({ contact }) => {
         <View style={styles.mailIconWrapper}>
           <Mail />
         </View>
-        <Text>{contact.email}</Text>
+        <Text style={styles.email}>{contact.email}</Text>
       </View>
       <View style={styles.phoneWrapper}>
         <View style={styles.phoneIconWrapper}>
           <Phone />
         </View>
-        <Text>{contact.phoneNumber}</Text>
+        <Text style={styles.phoneNumber}>{contact.phoneNumber}</Text>
       </View>
     </View>
   );

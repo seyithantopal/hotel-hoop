@@ -131,11 +131,11 @@ const HomeScreen: FC<homeScreenProp> = ({ navigation }) => {
         style={styles.hotelList}
         renderItem={({ item }) => {
           return (
-            <TouchableOpacity onPress={() => handleNavigate(item)}>
+            <TouchableWithoutFeedback onPress={() => handleNavigate(item)}>
               <View style={styles.hotel}>
                 <Hotel hotel={item} />
               </View>
-            </TouchableOpacity>
+            </TouchableWithoutFeedback>
           );
         }}
       />
