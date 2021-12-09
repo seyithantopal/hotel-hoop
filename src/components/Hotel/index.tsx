@@ -13,7 +13,7 @@ const Hotel: FC<{ hotel: HotelType }> = ({ hotel }) => {
         <Image
           style={styles.hotelImage}
           source={{
-            uri: 'https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg',
+            uri: hotel.gallery[0],
           }}
         />
         <View style={styles.hotelFeaturesWrapper}>

@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { View, Text, FlatList, TouchableWithoutFeedback, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/core';
 import { homeScreenProp } from '../../types/types';
 import { HotelType } from '../../utils/constants/interfaces';
 
