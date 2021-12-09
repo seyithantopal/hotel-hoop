@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { View, Text } from 'react-native';
-import Mail from './Icons/Mail';
-import Phone from './Icons/Phone';
+import Mail from '../../assets/icons/Mail';
+import Phone from '../../assets/icons/Phone';
 
 import styles from './styles';
 

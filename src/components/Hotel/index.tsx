@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { View, Text, Image } from 'react-native';
 import { HotelType } from '../../utils/constants/interfaces';
-import Pin from './Icons/Pin';
+import Pin from '../../assets/icons/Pin';
 import Stars from '../Stars';
 
 import styles from './styles';

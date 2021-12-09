@@ -3,7 +3,7 @@ import Svg, { Path } from 'react-native-svg';
 import {
   COLOR_STAR_BACKGROUND_ACTIVE,
   COLOR_STAR_BACKGROUND_PASSIVE,
-} from '../../../utils/constants/color';
+} from '../../utils/constants/color';
 
 export default ({ active }) => {
   const COLOR = active

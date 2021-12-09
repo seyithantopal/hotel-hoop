@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import { View, TextInput } from 'react-native';
 
-import Search from './Icons/Search';
+import Search from '../../assets/icons/Search';
 import styles from './styles';
 
 const Searchbox: FC = () => {

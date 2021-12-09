@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { View } from 'react-native';
-import Star from './Icons/Star';
+import Star from '../../assets/icons/Star';
 
 import styles from './styles';
 

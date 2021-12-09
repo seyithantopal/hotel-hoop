@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { View } from 'react-native';
 
-import Sorting from './Icons/Sorting';
+import Sorting from '../../assets/icons/Sorting';
 import styles from './styles';
 
 const Sortingbox: FC = () => {

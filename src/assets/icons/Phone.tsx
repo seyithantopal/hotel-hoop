@@ -1,6 +1,6 @@
 import React from 'react';
 import Svg, { Path } from 'react-native-svg';
-import { COLOR_PHONE_ICON_STROKE } from '../../../utils/constants/color';
+import { COLOR_PHONE_ICON_STROKE } from '../../utils/constants/color';
 
 export default () => {
   return (

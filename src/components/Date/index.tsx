@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { View, Text } from 'react-native';
 import VerticalDivider from '../VerticalDivider';
-import DateIcon from './Icons/Date';
+import DateIcon from '../../assets/icons/Date';
 
 import styles from './styles';
 
