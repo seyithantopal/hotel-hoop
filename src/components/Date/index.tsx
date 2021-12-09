@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
 import { View, Text } from 'react-native';
+import { CheckInType, CheckOutType } from '../../types/interfaces';
 import VerticalDivider from '../VerticalDivider';
 import DateIcon from '../../assets/icons/Date';
 
 import styles from './styles';
 
-const Date: FC = ({ checkIn, checkOut }) => {
+const Date: FC<{ checkIn: CheckInType; checkOut: CheckOutType }> = ({
+  checkIn,
+  checkOut,
+}) => {
   return (
     <View style={styles.wrapper}>
       <View style={styles.iconWrapper}>
@@ -18,7 +22,8 @@ const Date: FC = ({ checkIn, checkOut }) => {
       <VerticalDivider />
       <View>
         <Text style={styles.dateTitle}>Check out</Text>
-        <Text style={styles.dateTime}>{`${checkOut.from} - ${checkOut.to}`}</Text>
+        <Text
+          style={styles.dateTime}>{`${checkOut.from} - ${checkOut.to}`}</Text>
       </View>
     </View>
   );

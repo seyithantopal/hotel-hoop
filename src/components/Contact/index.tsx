@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
 import { View, Text } from 'react-native';
+import { ContactType } from '../../types/interfaces';
 import Mail from '../../assets/icons/Mail';
 import Phone from '../../assets/icons/Phone';
 
 import styles from './styles';
 
-const Contact: FC = ({ contact }) => {
+const Contact: FC<{ contact: ContactType }> = ({ contact }) => {
   return (
     <View style={styles.wrapper}>
       <Text style={styles.heading}>Contact</Text>

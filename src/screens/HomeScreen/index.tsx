@@ -2,7 +2,7 @@ import React, { FC, useState, useEffect } from 'react';
 import { View, Text, FlatList, TouchableWithoutFeedback } from 'react-native';
 import axios from 'axios';
 import { homeScreenProp } from '../../types/types';
-import { HotelType } from '../../utils/constants/interfaces';
+import { HotelType } from '../../types/interfaces';
 
 // Components
 import Title from '../../components/Title';

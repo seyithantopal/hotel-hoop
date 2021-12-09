@@ -18,7 +18,6 @@ export default StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     width: '100%',
-    //height: '100%', // Comment that out
     padding: 7,
     borderRadius: 20,
   },
@@ -43,7 +42,7 @@ export default StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
   },
   hotelName: {
     fontSize: 21,

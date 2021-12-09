@@ -1,4 +1,4 @@
-import { HotelType } from '../utils/constants/interfaces';
+import { HotelType } from '../types/interfaces';
 
 export type RootStackParamList = {
   Home: undefined;

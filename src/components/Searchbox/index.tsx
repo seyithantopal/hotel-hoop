@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { View, TextInput } from 'react-native';
-import { SearchboxType } from '../../utils/constants/interfaces';
+import { SearchboxType } from '../../types/interfaces';
 import Search from '../../assets/icons/Search';
 
 import styles from './styles';

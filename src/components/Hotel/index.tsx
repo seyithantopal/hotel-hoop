@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { View, Text, Image } from 'react-native';
-import { HotelType } from '../../utils/constants/interfaces';
+import { HotelType } from '../../types/interfaces';
 import Pin from '../../assets/icons/Pin';
 import Stars from '../Stars';
 
@@ -29,7 +29,7 @@ const Hotel: FC<{ hotel: HotelType }> = ({ hotel }) => {
               <Text
                 style={
                   styles.hotelPrice
-                }>{`${hotel.price}${hotel.currency} / night`}</Text>
+                }>{`${hotel.price} ${hotel.currency} / night`}</Text>
             </View>
             <Stars stars={hotel.stars} />
             <Text style={styles.hotelUserRating}>{hotel.userRating}</Text>
